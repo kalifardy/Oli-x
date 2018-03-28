@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Aplikasi_Oli-X_Nelayan</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="Pengumuman"> \ Solar           :100000 Liter \n
+Harga           :8500 /liter \n
+Total Harga Rp 800.000.000,-\n
+
+Hari/tanggal \n
+Senin, 19 Maret 2018 \n
+jam  07.00 \n
+
+
+         ini Lokasi \n
+
+Keterangan : Dermaga Rembang
+
+</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_login">HomeLoginActivity</string>
+</resources>
