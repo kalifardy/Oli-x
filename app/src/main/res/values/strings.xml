@@ -5,20 +5,20 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="Pengumuman"> \ Solar           :100000 Liter \n
-Harga           :8500 /liter \n
-Total Harga Rp 800.000.000,-\n
+    <string name="Pengumuman"> \ Solar\n
+Harga\n
+Total Harga\n
 
 Hari/tanggal \n
-Senin, 19 Maret 2018 \n
 jam  07.00 \n
 
 
-         ini Lokasi \n
+          Lokasi \n
 
-Keterangan : Dermaga Rembang
+Keterangan
 
 </string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->

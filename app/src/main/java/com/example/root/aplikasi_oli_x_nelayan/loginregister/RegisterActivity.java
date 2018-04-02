@@ -1,9 +1,11 @@
 package com.example.root.aplikasi_oli_x_nelayan.loginregister;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.icu.util.Calendar;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -13,8 +15,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.example.root.aplikasi_oli_x_nelayan.ApiHelper.ApiService;
-import com.example.root.aplikasi_oli_x_nelayan.ApiHelper.UtilsApi;
+import com.example.root.aplikasi_oli_x_nelayan.apihelper.ApiService;
+import com.example.root.aplikasi_oli_x_nelayan.apihelper.UtilsApi;
 import com.example.root.aplikasi_oli_x_nelayan.R;
 
 import org.json.JSONException;
@@ -39,15 +41,27 @@ public class RegisterActivity extends AppCompatActivity {
     private RadioButton radioButton2;
     private EditText edtNoHp;
     private Button btnRegister;
+    private String[] arrMonth = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+    int hour, minute, mYear,mMonth, mDay;
+
+
     //    ProgressDialog loading;
     Context mContext;
     ApiService mApiservice;
     private RadioGroup rgsex;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        final Calendar c = Calendar.getInstance();
+        mYear = c.get(Calendar.YEAR);
+        mMonth = c.get(Calendar.MONTH);
+        mDay = c.get(Calendar.DAY_OF_MONTH);
+
+
         mContext = this;
         mApiservice = UtilsApi.getApiService();
         setTitle("Register");
@@ -152,5 +166,6 @@ public class RegisterActivity extends AppCompatActivity {
     public void onBackPressed() {
         Intent i = new Intent(mContext, MainActivity.class);
         startActivity(i);
+        finish();
     }
 }
